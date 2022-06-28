@@ -92,3 +92,43 @@ nav li{
     padding: 15px 0 0 0;
     margin-right: 15px;
 }
+
+.content ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: clamp(320px , 1110px, 100%);
+    margin: 30px auto;
+    justify-content: center;
+}
+.items{
+    width: clamp(320px,350px,350px);
+    background-color: var(--back-light-color);
+    border-radius: 10px;
+    border: 1px solid var(--back-color);
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 10px rgb(200, 200, 200);
+}
+.item img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+figure{
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    background-color: var(--base-color);
+    color: var(--light-font-color);
+    padding: 3px 5px;
+}
+.items p{
+    padding-left: 10px;
+}
+.itemtitle{
+    font-weight: 700;
+    font-size: 20px;
+}
