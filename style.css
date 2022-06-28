@@ -132,3 +132,93 @@ figcaption{
     font-weight: 700;
     font-size: 20px;
 }
+.itemtags span{
+    padding-right: 10px;
+}
+.itemtags span a{
+    color: var(--font-color);
+}
+.update{
+    background-color: var(--back-light-color);
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+.update h3{
+    width: clamp(320px,1110px),100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    font-size: 40px;
+}
+dl{
+    width: clamp(320px,1110px,100%);
+    padding-left: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+dt{
+    width: 100px;
+    padding-right: 30px;
+}
+dd{
+    width: clamp(220px,1080px,calc(100% - 100px));
+}
+footer{
+    background-color: var(--base-color);
+    color: var(--light-font-color);
+    padding: 50px 0;
+}
+footer p{
+    text-align: center;
+}
+
+@media screen and (max-width:700px){
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+    .headerwrapper{
+        display: block;
+    }
+    hgroup{
+        width: 100%;
+    }
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    h2{
+        text-align: 18px;
+        text-align: center;
+    }
+    .spnavbtn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .spnav{
+        display: none;
+        position: absolute;
+        top: 70px;
+        background-color: var(--back-color);
+        width: 100%;
+    }
+    .spnav form{
+        display: block;
+    }
+    .spnav ul{
+        padding: 20px 0;
+    }
+    .spnav li{
+        width: 100%;
+        text-align: center;
+    }
+    input[type=search]{
+        width: auto;
+    }
+    .active{
+        display: block;
+    }
+}
